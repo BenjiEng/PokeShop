@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="store">
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pokemon.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="store-directives.js"></script>
+  </head>
+
+  <body class="list-group" ng-controller="StoreController as store">
+   <!--  Store Header  -->
+   <header>
+     <h1 class="text-center">Pokemon Poke-Shop</h1>
+   </header>
+
+   <div class="list-group-item" ng-repeat="product in store.products">
+     <product-title></product-title>
+
+     <!-- Product Gallery  -->
+     <product-gallery></product-gallery>
+
+     <!-- Product Tabs -->
+     <product-tabs></product-tabs>
+
+   </div>
+ </body>
+</html>
