@@ -2,6 +2,7 @@
 <html ng-app="store">
 
   <head>
+    <link rel="icon" href="http://orig05.deviantart.net/e355/f/2011/338/e/c/pokeball_vector_by_fools_muse-d4i7mj7.jpg" sizes="256x256" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="pokemon.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
@@ -12,7 +13,11 @@
   <body class="list-group" ng-controller="StoreController as store">
    <!--  Store Header  -->
    <header>
-     <h1 class="text-center">Pokemon Poke-Shop</h1>
+     <h1 class="text-center">
+       <img src="http://orig05.deviantart.net/e355/f/2011/338/e/c/pokeball_vector_by_fools_muse-d4i7mj7.jpg" style="height: 50px; width: 50px;">
+       Pokemon Poke-Shop
+       <img src="http://orig05.deviantart.net/e355/f/2011/338/e/c/pokeball_vector_by_fools_muse-d4i7mj7.jpg" style="height: 50px; width: 50px;">
+     </h1>
    </header>
 
    <div class="list-group-item" ng-repeat="product in store.products">
